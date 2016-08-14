@@ -18,6 +18,11 @@ public class Gaze : MonoBehaviour {
         rb.velocity = head.Gaze.direction*10;
     }
 
+    public Vector3 LookDirection()
+    {
+        return Vector3.ProjectOnPlane(head.Gaze.direction,Vector3.up);
+    }
+
     // Update is called once per frame
     void Update () {
 	
