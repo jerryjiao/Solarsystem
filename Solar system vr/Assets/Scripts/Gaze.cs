@@ -15,7 +15,7 @@ public class Gaze : MonoBehaviour {
 
     private void PullTrigger()
     {
-        rb.velocity = head.Gaze.direction*10;
+        //rb.velocity = head.Gaze.direction*10;
     }
 
     public Vector3 LookDirection()
