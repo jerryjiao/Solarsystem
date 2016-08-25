@@ -17,6 +17,7 @@ public class MenuFollow : MonoBehaviour {
 	
 	// Update is called once per frame
 	void LateUpdate () {
+
         transform.rotation = Quaternion.LookRotation(gaze.LookDirection());
         transform.position = gaze.transform.position;
         transform.position += gaze.LookDirection() * Distance;

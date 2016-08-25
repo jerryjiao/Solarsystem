@@ -5,6 +5,8 @@ public class Gaze : MonoBehaviour {
 
     private CardboardHead head;
     private Rigidbody rb;
+    public bool obismove=false;
+
 
 	// Use this for initialization
 	void Start () {
@@ -15,7 +17,16 @@ public class Gaze : MonoBehaviour {
 
     private void PullTrigger()
     {
-        //rb.velocity = head.Gaze.direction*10;
+        if (obismove)
+        {
+            rb.velocity = head.Gaze.direction * 10;
+        }
+        else
+        {
+
+            rb.velocity = new Vector3(0f, 0f, 0f);
+        }
+
     }
 
     public Vector3 LookDirection()
@@ -27,6 +38,5 @@ public class Gaze : MonoBehaviour {
     void Update () {
 	
 	}
-
    
 }

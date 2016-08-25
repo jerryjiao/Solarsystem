@@ -160,8 +160,8 @@ public class GazeInputModule : BaseInputModule {
     // Update the current selection, or clear if it is no longer the current object.
     var selected = ExecuteEvents.GetEventHandler<ISelectHandler>(go);
     if (selected == eventSystem.currentSelectedGameObject) {
-      ExecuteEvents.Execute(eventSystem.currentSelectedGameObject, GetBaseEventData(),
-                            ExecuteEvents.updateSelectedHandler);
+        ExecuteEvents.Execute(eventSystem.currentSelectedGameObject, GetBaseEventData(),
+                                  ExecuteEvents.updateSelectedHandler);
     }
     else {
       eventSystem.SetSelectedGameObject(null, pointerData);
