@@ -19,7 +19,7 @@ public class Gaze : MonoBehaviour {
     {
         if (obismove)
         {
-            rb.velocity = head.Gaze.direction * 10;
+            rb.velocity = head.Gaze.direction * 15;
         }
         else
         {

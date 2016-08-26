@@ -11,7 +11,7 @@ public class MenuFollow : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         gaze = GameObject.FindObjectOfType<Gaze>();
-        transform.Rotate(Vector3.up);
+        //transform.Rotate(Vector3.up);
 	}
 	
 	// Update is called once per frame
