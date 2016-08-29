@@ -11,7 +11,7 @@ public class ElementShip : MonoBehaviour {
 
     Transform elementtransform;
 
-    private CardboardHead head;
+    //private CardboardHead head;
 
 
     
@@ -19,7 +19,7 @@ public class ElementShip : MonoBehaviour {
     void Start () {
         panel = GetComponentInParent<Panel>();
         elementtransform = GetComponent<Transform>();
-        head = GameObject.FindObjectOfType<CardboardHead>();
+        //head = GameObject.FindObjectOfType<CardboardHead>();
     }
 	
 	// Update is called once per frame

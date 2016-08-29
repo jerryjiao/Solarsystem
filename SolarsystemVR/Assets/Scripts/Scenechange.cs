@@ -17,4 +17,9 @@ public class Scenechange : MonoBehaviour {
     public void LoadLevel() {
         SceneManager.LoadScene("SolarSystemmain");
     }
+
+    public void LoadLevel2() {
+        SceneManager.LoadScene("RealScaleScene");
+
+    }
 }
