@@ -11,6 +11,6 @@ public class PlanetRotate : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.rotation = Quaternion.Euler(0, rotatespeed, 0) * transform.rotation;
+        transform.rotation = Quaternion.Euler(0, rotatespeed, 0) * transform.rotation;//Euler rotate
 	}
 }

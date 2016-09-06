@@ -10,9 +10,9 @@ public class Gaze : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        Cardboard.SDK.OnTrigger += PullTrigger; //%%        
-        head = GameObject.FindObjectOfType<CardboardHead>();
-        rb = GetComponent<Rigidbody>();
+        Cardboard.SDK.OnTrigger += PullTrigger; //        
+        head = GameObject.FindObjectOfType<CardboardHead>();//instantiation CardboardHead
+        rb = GetComponent<Rigidbody>();//instantiation CardboardHead 
     }
 
     public void PullTrigger()

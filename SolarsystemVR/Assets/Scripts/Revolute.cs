@@ -11,6 +11,7 @@ public class Revolute : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.RotateAround(Vector3.zero,Vector3.up,rotateSpeed*Time.deltaTime);
+        Vector3 origin = new Vector3(0, 0, 0); //define the point that the planet rotate
+        transform.RotateAround(origin,Vector3.up,rotateSpeed*Time.deltaTime);
 	}
 }
